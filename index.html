@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, user-scalable=no" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <title>To Do List App</title>
+    <link href="./index.css" rel="stylesheet" />
+    <link href="./app.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="windowTopBar"></div>
+    <div class="container">
+      <div class="branding-name">Finish him - by Chairil Ali</div>
+      <div class="add-item">
+        <input placeholder="Type Something..." type="text" class="item-text" />
+        <img src="./button-icons/Add.svg" class="add-btn" />
+      </div>
+      <div class="items-container"></div>
+    </div>
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./App.js"></script>
+  </body>
+</html>
